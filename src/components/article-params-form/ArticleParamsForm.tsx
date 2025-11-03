@@ -11,7 +11,7 @@ import {
 	fontSizeOptions,
 	fontColors,
 	backgroundColors,
-	contentWidth,
+	contentWidthArr,
 	ArticleStateType,
 } from 'src/constants/articleProps';
 import { useClickAway } from 'src/hooks/useClickAway';
@@ -110,7 +110,7 @@ export const ArticleParamsForm = ({
 						/>
 						<Select
 							title='Ширина контента'
-							options={contentWidth}
+							options={contentWidthArr}
 							selected={currentFormData.contentWidth}
 							onChange={(opt) => updateField('contentWidth', opt)}
 						/>
