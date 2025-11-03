@@ -147,7 +147,7 @@ export const backgroundColors: OptionType[] = [
 	},
 ];
 
-export const contentWidthArr: OptionType[] = [
+export const contentWidth: OptionType[] = [
 	{
 		title: 'Широкий',
 		value: '1394px',
@@ -172,8 +172,12 @@ export const defaultArticleState = {
 	fontFamilyOption: fontFamilyOptions[0],
 	fontColor: fontColors[0],
 	backgroundColor: backgroundColors[0],
-	contentWidth: contentWidthArr[0],
+	contentWidth: contentWidth[0],
 	fontSizeOption: fontSizeOptions[0],
 };
 
 export type ArticleStateType = typeof defaultArticleState;
+
+export const backgroundColorOptions = backgroundColors;
+export const fontColorOptions = fontColors;
+export const contentWidthOptions = contentWidth;
