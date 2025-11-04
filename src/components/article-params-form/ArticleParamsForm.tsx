@@ -11,6 +11,7 @@ import {
 	fontSizeOptions,
 	fontColors,
 	backgroundColors,
+	defaultArticleState,
 	contentWidthArr,
 	ArticleStateType,
 } from 'src/constants/articleProps';
@@ -56,8 +57,8 @@ export const ArticleParamsForm = ({
 	};
 
 	const resetToDefaults = () => {
-		setCurrentFormData(initialSettings);
-		onSettingsApply(initialSettings);
+		setCurrentFormData(defaultArticleState);
+		onSettingsApply(defaultArticleState);
 	};
 
 	return (
